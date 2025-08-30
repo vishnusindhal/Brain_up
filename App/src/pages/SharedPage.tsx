@@ -1,14 +1,13 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Card from "../components/CardUi/Card";
 import { useEffect, useState } from "react";
 
 const SharedPage = () => {
-  const { id } = useParams();
   const location = useLocation();
   const [sharedData, setSharedData] = useState<any[]>([]);
 
   useEffect(() => {
-    // First try to get data from location state (if navigated within app)
+    // Try to get data from location state (if navigated within app)
     if (location.state?.shared) {
       setSharedData(location.state.shared);
     } else {
