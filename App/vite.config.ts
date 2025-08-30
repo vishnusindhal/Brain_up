@@ -13,8 +13,8 @@ export default defineConfig({
     host: true,
     cors: {
       origin: [
-        // 'https://brain-up-backend.onrender.com',
-        // 'http://localhost:5000'
+        'https://brain-up-backend.onrender.com',
+        'http://localhost:5000'
       ],
       credentials: true
     },
@@ -22,7 +22,8 @@ export default defineConfig({
       // 'brain-up-frontend.onrender.com',
       // 'brain-up-dashboard.onrender.com',
       // 'brain-up-backend.onrender.com',
-      // '.onrender.com',
+      '.onrender.com',
+      'brain-up-2.onrender.com'
     ]
   }
 })
